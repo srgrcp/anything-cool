@@ -1,0 +1,18 @@
+type User {
+    _id: String!
+    username: String!
+}
+
+type UserPage {
+    docs: [User!]!
+    totalDocs: Int!
+    limit: Int!
+    hasPrevPage: Boolean!
+    hasNextPage: Boolean!
+    page: Int!
+    totalPages: Int!
+    offset: Int
+    prevPage: Int
+    nextPate: Int
+    pagingCounter: Int
+}

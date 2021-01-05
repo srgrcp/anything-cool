@@ -1,0 +1,8 @@
+type Query {
+    user(id: String!): User!
+    users(pageOptions: PageOptions!): UserPage!
+}
+
+type Mutation {
+    createUser(username: String!, password: String!): User!
+}
